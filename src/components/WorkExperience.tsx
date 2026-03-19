@@ -3,6 +3,7 @@
 import { DATA } from '@/data/resume';
 import { cn } from '@/lib/utils';
 import { ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export function WorkExperience() {
@@ -17,8 +18,20 @@ export function WorkExperience() {
 
           return (
             <div key={idx} className="flex gap-4">
-              <div className="mt-1 h-12 w-12 flex-none rounded-full border border-neutral-200 dark:border-neutral-800 bg-black flex items-center justify-center text-lg font-bold text-white overflow-hidden shadow-sm">
-                {role.company[0]}
+              <div className="mt-1 h-12 w-12 flex-none rounded-full border border-neutral-200 dark:border-neutral-800 bg-white flex items-center justify-center overflow-hidden shadow-sm">
+                {role.logoUrl ? (
+                  <Image
+                    src={role.logoUrl}
+                    alt={role.company}
+                    width={48}
+                    height={48}
+                    className="object-contain p-1"
+                  />
+                ) : (
+                  <span className="text-lg font-bold text-black">
+                    {role.company[0]}
+                  </span>
+                )}
               </div>
               <div className="flex-1 space-y-1.5 pt-1">
                 <div

@@ -70,7 +70,7 @@ export const DATA = {
       badges: ['Intern'],
       location: 'Remote',
       title: 'Full-Stack Intern',
-      logoUrl: '', // Need generic logo
+      logoUrl: '/infosys.png', // Need generic logo
       start: 'Sep 2025',
       end: 'Nov 2025',
       description:
@@ -82,7 +82,7 @@ export const DATA = {
       badges: ['Intern'],
       location: 'Remote',
       title: 'Backend Intern',
-      logoUrl: '', // Need generic logo
+      logoUrl: '/zoro.png', // Need generic logo
       start: 'Jul 2025',
       end: 'Sep 2025',
       description:
