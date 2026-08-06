@@ -102,6 +102,40 @@ export const DATA = {
   ],
   projects: [
     {
+      title: 'EventSphere',
+      href: '#',
+      dates: '2026',
+      active: true,
+      description:
+        'Architected a full-stack event and notice management platform for a college institution, replacing a fully manual paper-based approval process with role-gated workflows across five user roles. Designed two independent multi-tier approval pipelines as PostgreSQL state machines using Prisma, reducing a 2–3 day manual approval cycle to same-day turnaround. Integrated a Python Flask microservice for automated document generation and AI-powered feedback analysis via REST APIs, eliminating manual letter drafting and streamlining sentiment and keyword extraction.',
+      technologies: [
+        'Next.js',
+        'React',
+        'TypeScript',
+        'PostgreSQL',
+        'Prisma',
+        'NextAuth',
+        'Tailwind CSS',
+        'Python',
+        'Flask',
+        'REST API',
+        'Nodemailer',
+      ],
+      links: [
+        {
+          type: 'GitHub',
+          href: 'https://github.com/Aryannnn-n/EventSphere',
+          icon: GithubIcon,
+        },
+        {
+          type: 'Live',
+          href: 'https://eventsphere.aryanchavan.me/',
+        },
+      ],
+      image: '/eventsphere.png', // Placeholder image
+      video: '',
+    },
+    {
       title: 'PawMitra',
       href: '#',
       dates: 'Nov 2025',
