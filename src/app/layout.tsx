@@ -7,8 +7,14 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   title: 'Aryan Chavan | Portfolio',
   description: 'Full-stack developer specializing in MERN and PostgreSQL',
+  openGraph: {
+    title: 'Aryan Chavan | Portfolio',
+    description: 'Full-stack developer specializing in MERN and PostgreSQL',
+    images: ['/OG.png'],
+  },
 };
 
 export default function RootLayout({
